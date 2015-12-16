@@ -1,29 +1,28 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600' rel='stylesheet' type='text/css'>
-  <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
+   <div id="container">
       <h1>Your List App</h1>
       <div id="app">
-        <form id='add-form'>
-          <input id="create" name="itemDescription" type="text" placeholder="Add something to the list!">
-        </form>
-        <ul id='list'>
+         <form id="add-form">
+            <input id="create" name="itemDescription" type="text" placeholder="Add something to the list!">
+         </form>
+         <ul id="list">
 
-        </ul>
+         </ul>
       </div>
-    </div>
-
-    <ul id='templates'>
-      <li class='item' data-id="some id">
-        <span class='complete-button'>&#10004;</span>
-        <div class="description">A stick of butter</div>
-        <span class="delete-button">&#10008;</span>
+   </div>
+   <ul id="templates">
+      <li class="item" data-id="some id">
+         <span class="complete-button">&#10004;</span>
+         <div class="description">A stick of butter</div>
+         <span class="delete-button">&#10008;</span>
       </li>
-    </ul>
+   </ul>
+<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
