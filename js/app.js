@@ -1,12 +1,22 @@
-// <li>test <input type="checkbox"></li>
-
-var btnNew = document.getElementById('btn-add');
-btnNew.onclick = addNewTask;
-
-function addNewTask(list) {
+function addNewList(list, itemText) {
 	var taskList = document.createElement('li');
-	taskList.innerText = "test";
+	taskList.innerText = itemText;
 
-	var list = document.getElementById('to-do-list');
 	list.appendChild(taskList);
 }
+
+var btnNew = document.getElementById('btn-add');
+
+btnNew.onclick = function() {
+	var inputTask = document.getElementById('input-task');
+	var taskText = inputTask.value;
+
+	if(!taskText) {
+		return false;
+	}﻿
+
+	addNewList(document.getElementById('to-do-list'), taskText);
+};
+
+
+
