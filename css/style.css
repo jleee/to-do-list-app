@@ -41,7 +41,7 @@
 }
 
 .page-header h1 {
-  font-size: 150px;
+  font-size: 100px;
   letter-spacing: -0.05em;
 }
 
@@ -63,6 +63,11 @@
 
 #to-do-list li {
   border-bottom: 1px solid #EEE;
+  padding: 10px 0px;
+}
+
+#to-do-list li:last-child {
+  border-bottom: none;
 }
 
 /* ======================================= 
