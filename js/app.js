@@ -1,6 +1,6 @@
 function addNewList(list, itemText) {
 	var taskList = document.createElement('li');
-	taskList.innerText = itemText;
+	taskList.textContent = itemText;
 
 	list.appendChild(taskList);
 }
@@ -17,6 +17,3 @@ btnNew.onclick = function() {
 
 	addNewList(document.getElementById('to-do-list'), taskText);
 };
-
-
-
